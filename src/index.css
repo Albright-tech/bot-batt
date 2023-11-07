@@ -1,13 +1,165 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  *{
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid red; */
+  }
+  
+  .army-collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 16px;
+    background-color: #a9c315;
+    min-height: 420px;
+  }
+  
+  .army-card{
+    width: 240px;
+    margin: 16px;
+    color: gray;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .army-card .avatar{
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #efedef;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .army-card .description{
+    padding: 16px;
+    border-top: 1px solid lightgray;
+  }
+  
+  .army-card .description .identification{
+    padding: 4px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .army-card .description .identification i{
+    margin-left: 8px;
+    font-size: 1em;
+  }
+  
+  .army-card .description .catchphrase{
+    word-wrap: break-word;
+  }
+  
+  .army-card .stats{
+    max-width: 100%;
+    border-top: 1px solid lightgray;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .army-card .stats .stat{
+    padding: 4px;
+  }
+  
+  .army-card .stats .stat i{
+    margin-right: 4px;
+  }
+  
+  .bot-collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 16px;
+    padding: 16px 0px;
+  }
+  
+  .card{
+    width: 23%;
+    color: gray;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .card .delete, .card .fa-circle-xmark{
+    color: red;
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: -1;
+    font-size: 1.5em;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .card:hover .delete{
+    z-index: 1000;
+  }
+  
+  .card .delete:hover{
+    color: rgba(255, 0, 0, 0.7);
+  }
+  
+  .card .avatar{
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #efedef;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .card .description{
+    padding: 16px;
+    border-top: 1px solid lightgray;
+  }
+  
+  .card .description .identification{
+    padding: 4px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .card .description .identification i{
+  margin-left: 8px;
+  font-size: 1em;
+  }
+  
+  .card .description .catchphrase{
+    word-wrap: break-word;
+  }
+  
+  .card .stats{
+    max-width: 100%;
+    border-top: 1px solid lightgray;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .card .stats .stat{
+    padding: 4px;
+  }
+  
+  .card .stats .stat i{
+  margin-right: 4px;
+  }
